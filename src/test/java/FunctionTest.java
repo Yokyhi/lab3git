@@ -57,4 +57,10 @@ public class FunctionTest {
         boolean check = Function.getX() == 0;
         Assert.assertNotEquals(true, check);
     }
+
+    @Test
+    public void xLess(){
+        boolean check = Function.getX() < 123456;
+        Assert.assertEquals(true, check);
+    }
 }
