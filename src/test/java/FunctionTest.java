@@ -34,4 +34,10 @@ public class FunctionTest {
         boolean check = Function.getX() < 2147483647;
         Assert.assertEquals(true, check);
     }
+
+    @Test
+    public void xNotNull(){
+        boolean check = Function.getX() != 0;
+        Assert.assertEquals(true, check);
+    }
 }
