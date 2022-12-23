@@ -16,4 +16,10 @@ public class FunctionTest {
     public void functionResult() {
         Assert.assertEquals(97.48636634052538, Function.func(),0.5);
     }
+
+    @Test
+    public void xCheck(){
+        boolean check = Function.getX() > 0;
+        Assert.assertEquals(true, check);
+    }
 }
