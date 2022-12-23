@@ -63,4 +63,10 @@ public class FunctionTest {
         boolean check = Function.getX() < 123456;
         Assert.assertEquals(true, check);
     }
+
+    @Test
+    public void xMore(){
+        boolean check = Function.getX() > -123456;
+        Assert.assertEquals(true, check);
+    }
 }
