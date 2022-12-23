@@ -28,4 +28,10 @@ public class FunctionTest {
         boolean check = Function.getX() < 0;
         Assert.assertNotEquals(true, check);
     }
+
+    @Test
+    public void xMaxLess(){
+        boolean check = Function.getX() < 2147483647;
+        Assert.assertEquals(true, check);
+    }
 }
