@@ -11,4 +11,9 @@ public class FunctionTest {
     public void createObject() {
         function = new Function(10);
     }
+
+    @Test
+    public void functionResult() {
+        Assert.assertEquals(97.48636634052538, Function.func(),0.5);
+    }
 }
