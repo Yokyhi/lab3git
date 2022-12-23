@@ -22,4 +22,10 @@ public class FunctionTest {
         boolean check = Function.getX() > 0;
         Assert.assertEquals(true, check);
     }
+
+    @Test
+    public void xCheckWrong(){
+        boolean check = Function.getX() < 0;
+        Assert.assertNotEquals(true, check);
+    }
 }
