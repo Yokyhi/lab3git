@@ -51,4 +51,10 @@ public class FunctionTest {
     public void functionCheckWrongResult(){
         Assert.assertNotEquals(100, Function.func(),0.5);
     }
+
+    @Test
+    public void xCheckNotEqResult(){
+        boolean check = Function.getX() == 0;
+        Assert.assertNotEquals(true, check);
+    }
 }
